@@ -154,6 +154,15 @@ export interface OfferingSerializer {
     };
   };
 }
+// Datas batch
+export interface ArrayWithOptionalFieldsSerializer {
+  data_batch: Array<{
+    text: string;
+    item_type: 'val_1' | 'val_2' | 'val_3';
+    optional_field_1: boolean;
+    optional_field_2: string;
+  }>;
+}
 export interface IPathPostV1AuthProviderOauth {
   provider: 'facebook' | 'twitter' /* Provider */;
 }
