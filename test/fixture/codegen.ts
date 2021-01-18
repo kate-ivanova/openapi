@@ -154,7 +154,7 @@ export interface OfferingSerializer {
     };
   };
 }
-// Datas batch
+// Data batch
 export interface ArrayWithOptionalFieldsSerializer {
   data_batch: Array<{
     text: string;
